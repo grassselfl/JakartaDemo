@@ -14,6 +14,8 @@ import java.io.PrintWriter;
 @WebServlet(urlPatterns = "/msg.do")
 public class BaseServlet extends HttpServlet {
 
+    //本身是继承Servlet，但是继承HttpServlet会省略很多重复实现
+
     private IBaseService baseService;
 
     @Override
